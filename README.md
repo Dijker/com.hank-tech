@@ -43,12 +43,33 @@ Door / Window sensor providing contact and tamper alarm.
 
 MultiSensor providing motion, illumination, temperature and humidity data for Homey.   
 
+### Hank Motion Sensor (HKZW-MS02)      
+<a href="https://github.com/TedTolboom/com.hank-tech">
+  <img src="https://rawgit.com/TedTolboom/com.hank-tech/master/drivers/HKZW-MS02/assets/icon.svg" width="10%" height="10%">
+</a>  
+
+Motion sensor providing motion alarm for Homey.   
+
 ### Hank Smart plug (HKZW-SO0x)      
 <a href="https://github.com/TedTolboom/com.hank-tech">
   <img src="https://rawgit.com/TedTolboom/com.hank-tech/master/drivers/HKZW-SO0x/assets/icon.svg" width="10%" height="10%">
 </a>  
 
-Smart plug, including 2 USB ports, providing meter data as well as RGB led indication   
+Smart plug, including 2 USB ports, providing meter data as well as RGB led indication  
+
+### Hank Flood sensor (HKZW-FLD01)      
+<a href="https://github.com/TedTolboom/com.hank-tech">
+  <img src="https://rawgit.com/TedTolboom/com.hank-tech/master/drivers/HKZW-FLD01/assets/icon.svg" width="10%" height="10%">
+</a>  
+
+Flood Sensor providing flooding-, tamper- and heat-alarm and temperature data for Homey.  
+
+### Hank RGB Color Bulb (HKZW-RGB01)      
+<a href="https://github.com/TedTolboom/com.hank-tech">
+  <img src="https://rawgit.com/TedTolboom/com.hank-tech/master/drivers/HKZW-RGB01/assets/icon.svg" width="10%" height="10%">
+</a>  
+
+RGB bulb.  
 
 ## Supported Languages:
 * English   
@@ -61,19 +82,43 @@ Smart plug, including 2 USB ports, providing meter data as well as RGB led indic
 ## Acknowledgements:
 This app and driver development has been supported by:   
 
-* Robbshop by providing a the devices for debugging:   
+* Robbshop by providing the devices for debugging:   
 <a href="https://www.robbshop.nl/heat-it-wandthermostaat-zwaveplus-zwart">
   <img src="https://www.robbshop.nl/skin/frontend/robbshop/default/images/logo.svg" width="25%">
 
 ## Feedback:
-Any requests please post them in the [Hank app topic on the Athom Forum](https://forum.athom.com/discussion/3708/) or contact me on [Slack](https://athomcommunity.slack.com/team/tedtolboom)    
+Any requests please post them in the [Hank app topic on the Athom Community Forum](https://community.athom.com/t/162) or contact me on [Slack](https://athomcommunity.slack.com/team/tedtolboom)    
 If possible, please report issues at the [issues section on Github](https://github.com/TedTolboom/com.hank-tech/issues) otherwise in the above mentioned topic.     
 
-### Donate:
-If you like the app, consider a donation to support development    
-[![Paypal Donate](https://www.paypalobjects.com/en_US/NL/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=5JCN4Q3XSBTBJ&lc=NL&item_name=Athom%20Homey%20apps&item_number=Hank%20app&currency_code=EUR&bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHosted)
-
 ## Changelog:
+### v1.1.3
+* Add missing productTypeID for the HKZW-MS02[see](https://community.athom.com/t/162/9)   
+
+### v1.1.2
+* Add support for the Hank HKZW-RGB01 bulb (thanks to @caseda)         
+* Add start-level and stop-level dim action cards for the Hank HKZW-RGB01 bulb        
+**update:**   
+* Update Homey meshdriver to 1.2.28
+
+### v1.1.1
+* Minor updates of Motion sensor parameters data ranges        
+* Add link to [Hank app topic](https://community.athom.com/t/162) on community.athom.com   
+**update:**   
+* Update Homey meshdriver to 1.2.25     
+
+### v1.1.0
+* Add support for the new Hank motion sensor (HKZW-MS02)   
+* Add support for the new Hank flood sensor (HKZW-FLD01)   
+* Update meshdriver to 1.2.10       
+
+### v1.0.3
+* Fix issue with SCN01 flow card trigger   
+
+### v1.0.2
+* Add Homey community forum link   
+* Update meshdriver to 1.2.8    
+* Driver clean-up & SDK2 optimizations     
+
 ### v1.0.1
 * Change Scene Controller device class to Sensor to enable default battery triggers (re-pair required)      
 
